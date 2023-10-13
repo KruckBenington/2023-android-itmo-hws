@@ -6,14 +6,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-    <Button
-        android:id="@+id/button_start"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_panel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/navigation_menu"
+        app:itemIconSize="100dp"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_to_update"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation_panel"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/button_start"
-        android:textSize="30sp"
-         />
+        android:name="ru.ok.itmo.example.SwitchFragment"
+        tools:layout="@layout/fragment_switch" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
