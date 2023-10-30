@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/navigation_menu"
-        app:itemIconSize="100dp"
+        app:itemIconSize="200dp"
         />
 
     <androidx.fragment.app.FragmentContainerView
